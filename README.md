@@ -14,6 +14,7 @@ As a movie enthusiast, I want to find a new good movie to watch based on Rotten 
 To be Added 
 
 ## User Flow Diagram 
+![This is the flowchart](/assets/Flowchart.png)
 
 ## APIs Used 
 • Rotten Tomatoes 
