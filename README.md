@@ -9,3 +9,8 @@ As a movie enthusiast, I want to find a new good movie to watch based on Rotten 
 •It is done when the user can store a list of their favorite movies 
 •It is done when the user can click on a movie and be directed to a page about the movie. 
 •It is done when the user can filter movies by category 
+
+## Wire Frame
+![Screenshot]()
+![Screenshot]()
+![Screenshot]()
