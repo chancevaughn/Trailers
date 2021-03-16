@@ -14,3 +14,10 @@ As a movie enthusiast, I want to find a new good movie to watch based on Rotten 
 ![Screenshot]()
 ![Screenshot]()
 ![Screenshot]()
+
+## User Flow Diagram 
+![This is the flowchart](/assets/image.png)
+
+## APIs Used 
+• Rotten Tomatoes 
+• Youtube 
