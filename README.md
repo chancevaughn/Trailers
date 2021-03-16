@@ -11,9 +11,8 @@ As a movie enthusiast, I want to find a new good movie to watch based on Rotten 
 •It is done when the user can filter movies by category 
 
 ## Wire Frame
-![Screenshot]()
-![Screenshot]()
-![Screenshot]()
+![Screenshot](https://github.com/chancevaughn/Trailers/blob/main/Images/Screen%20Shot%202021-03-15%20at%209.30.35%20PM.png)
+![Screenshot](https://github.com/chancevaughn/Trailers/blob/main/Images/Screen%20Shot%202021-03-15%20at%209.30.45%20PM.png)
 
 ## User Flow Diagram 
 ![This is the flowchart](/assets/image.png)
