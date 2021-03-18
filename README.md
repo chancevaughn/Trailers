@@ -18,5 +18,5 @@ As a movie enthusiast, I want to find a new good movie to watch based on Rotten 
 ![This is the flowchart](/assets/image.png)
 
 ## APIs Used 
-• Rotten Tomatoes 
+• OMDb
 • Youtube 
