@@ -1,0 +1,11 @@
+.carousel-item{
+    width: 540px !important;
+    height: 810px !important;
+}
+.carousel {
+    height:820px !important;
+}
+body {
+    background-color: black;
+}
+
