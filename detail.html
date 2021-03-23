@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Compiled and minified CSS -->
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
-    <link rel="stylesheet" href="../../style.css"/>
+    <link rel="stylesheet" href="style.css"/>
     <title>Trailers</title>
 </head>
 <body>
@@ -17,7 +17,7 @@
             <a href="#!" class="brand-logo center">Movie Title</a>
             <a href="#" data-target="mobile-demo"></a>
             <ul class="left" id="mobile-demo">
-                <li><a class="amber-text">‹ All Movies</a></li>
+                <li><a class="amber-text" href="index.html">‹ All Movies</a></li>
             </ul>
             <ul class="right">
                 <li><a class="amber-text">Favorite</a></li>
@@ -30,9 +30,11 @@
 
             <div class="col s6">
                 <div class="card">
-                    <div class="card-image">
-                        <img src="https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/Green-band-trailer-card.jpg">
-                    </div>
+                    <div class = "video-container">
+                        <iframe width = "540" height = "200"
+                           src = "https://www.youtube.com/embed/Q8TXgCzxEnw?rel=0"
+                           frameborder = "0" allowfullscreen></iframe>
+                     </div>
                 </div>
             </div>
 <!--UPDATE S6 to be mobile friendly, add another class based on materialize sizing md, lg, s-->
