@@ -8,8 +8,14 @@
 body {
     background-color: black;
 }
-/* .card-image {
-    height: 32px;
-    width: 16px;
+#logo {
+    height: 100% !important;
+    padding-left: 10px !important;
+}
+#menu {
+    height: 30% !important;
+    /* padding-top: 5px !important; */
+}
+/* img {
+    height:290px !important;
 } */
-
