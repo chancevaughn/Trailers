@@ -1,5 +1,5 @@
 var omdbAppId = 'trilogy';
-var youtubeAPI = 'AIzaSyDy0Z1hGuIAeJbvhnVXeGE-3W7roHgRQis';
+var youtubeAPI = 'AIzaSyBbiwbK5jz8XGwneVdyFF6oyJpDol-X80U';
 var omdbPath = 'http://www.omdbapi.com/';
 var youtubePath = 'https://youtube.googleapis.com/youtube/v3/search';
 
