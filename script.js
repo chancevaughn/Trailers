@@ -27,3 +27,4 @@ allMovies.onclick = function(){
     cardPage.style.display="none";
     navbar.style.display="block"
 }
+$(".dropdown-trigger").dropdown();

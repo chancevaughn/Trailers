@@ -7,14 +7,26 @@
     <!-- Compiled and minified CSS -->
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
     <link rel="stylesheet" href="style.css"/>
-    <title>Trailers</title>
+    <title>Trailerflix</title>
 </head>
 <body>
-  <nav id="navbar">
-    <div class="nav-wrapper grey darken-4">
-      <a href="#" class="brand-logo">Trailerflix</a>
-    </div>
-  </nav>
+  <div class="navbar-fixed">
+    <nav id="navbar">
+      <div class="nav-wrapper black">
+        <img href="#" class="brand-logo" src="Images/logo.png" id="logo"></img>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><img class="material-icons" src="Images/hamburger.png" id="menu"></img></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="favorites.html">Favorites</a></li>
+        </ul>     
+      </div>
+    </nav>
+  </div>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="favorites.html">Favorites</a></li>
+  </ul>
+          
+  
   <!-- Top Carousel -->
   <div class="carousel" id="top-carousel">
     <a class="carousel-item" href="detail.html?movie=Black+widow"><img src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_19075_0fd5159b.jpeg?region=0,0,540,810"></a>
