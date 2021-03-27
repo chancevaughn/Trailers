@@ -31,3 +31,10 @@ body {
     }
     
 }
+
+/* @media (max-width: 992px){
+    .card-image img {
+        height: 290px;
+        width: 180px;
+    }
+} */
