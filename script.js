@@ -6,13 +6,14 @@ M.AutoInit();
 // var allMovies = document.getElementById("all-movies")
 // var navbar = document.getElementById("navbar")
 
+
 // function startpage(){
 // carousel.style.display="block";
 // moviePosters.style.display="block";
 // cardPage.style.display="none";
 // navbar.style.display="block"
 // }
-// startpage()
+// startpage(
 
 // moviePosters.onclick = function(){
 //     carousel.style.display="none";
