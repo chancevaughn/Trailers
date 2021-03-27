@@ -16,6 +16,18 @@ body {
     height: 30% !important;
     /* padding-top: 5px !important; */
 }
-/* img {
-    height:290px !important;
-} */
+.row {
+    margin-bottom: 0px;
+}
+.row-when-small{
+    display: none;
+}
+@media (max-width: 992px){
+    .row-when-large {
+        display: none;
+    }
+    .row-when-small {
+        display: block;
+    }
+    
+}
