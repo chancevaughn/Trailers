@@ -1,4 +1,4 @@
-var favoriteMovies = JSON.parse((window.localStorage.getItem('favoriteMovie')));
+var favoriteMovies = JSON.parse((window.localStorage.getItem(`${movie}`)));
 $(".card-movies a").attr("href", favoriteMovies[0].href);
 $(".card-movies img").attr("src", (favoriteMovies[0].src));
 
