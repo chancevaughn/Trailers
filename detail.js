@@ -43,13 +43,17 @@ $(".switch").on('click', function() {
     var movie = {src: "Images/movie-posters/" + src ,
     href: "detail.html?movie=" + href
     }
-var favoriteMovie = [];
-if (favoriteMovie.includes(movie)) {
-    favoriteMovie.push(movie)
-}
-localStorage.setItem(favoriteMovie, JSON.stringify(favoriteMovie))
-console.log(favoriteMovie)
-})
+    var favoriteMovie = [];
+    if (!favoriteMovie.includes(movie)) {
+        favoriteMovie.push(movie)
+    }
+    localStorage.setItem('favoriteMovie', JSON.stringify(favoriteMovie))
+    console.log(favoriteMovie)
+    })
+// if (
+//     (JSON.parse(localStorage.getItem('favorieMovie')) !== null)) {
+//         favoriteMovie = JSON.parse(localStorage.getItem("movie"))
+//     }})
 
     //if statement to check if its already inthe array. use method called .includes. if not in the array, push to the array. 
     // after if statement, set local storage with favmovies array. nsole.log(movie)
