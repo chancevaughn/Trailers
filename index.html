@@ -7,6 +7,7 @@
     <!-- Compiled and minified CSS -->
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
     <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" type="image/png" href="Images/movie-posters/Favicon-Logo.png"/>
     <title>Trailerflix</title>
 </head>
 <body>
@@ -29,16 +30,24 @@
   
   <!-- Top Carousel -->
   <div class="carousel" id="top-carousel">
-    <a class="carousel-item" href="detail.html?movie=Black+widow"><img src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_19075_0fd5159b.jpeg?region=0,0,540,810"></a>
-    <a class="carousel-item" href="detail.html?movie=Enola+holmes"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kids-movies-2020-enola-holmes-1606837863.jpg?crop=0.9881422924901185xw:1xh;center,top&resize=480:*"></a>
-    <a class="carousel-item" href="detail.html?movie=Free-guy"><img src="https://m.media-amazon.com/images/M/MV5BYTNjNzFiZTItNDM5NS00ODBhLTk5NmMtYzUyZWRmOWJjOTI3XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg"></a>
-    <a class="carousel-item" href="detail.html?movie=Sonic+the+hedgehog"><img src="https://thewestburytimes.com/wp-content/uploads/2020/07/TNH-Movies.jpg"></a>
+    <a class="carousel-item" href="detail.html?movie=Black+widow">
+      <img src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_19075_0fd5159b.jpeg?region=0,0,540,810">
+    </a>
+    <a class="carousel-item" href="detail.html?movie=Enola+holmes">
+      <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kids-movies-2020-enola-holmes-1606837863.jpg?crop=0.9881422924901185xw:1xh;center,top&resize=480:*">
+    </a>
+    <a class="carousel-item" href="detail.html?movie=The+little+things">
+      <img src="https://m.media-amazon.com/images/M/MV5BOGFlNTdmYWQtM2IzMi00YTY3LTlmMDQtZDI5NGQ5MjYzZmEwXkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_.jpg">
+    </a>
+    <a class="carousel-item" href="detail.html?movie=Sonic+the+hedgehog">
+      <img src="https://thewestburytimes.com/wp-content/uploads/2020/07/TNH-Movies.jpg">
+    </a>
   </div>
 
   <!-- Grid for movie posters -->
   <div class="container" id="movie-posters-grid">
-    <!-- Row 1 -->
-    <div class="row">
+    <!-- Row 1  When screen is large -->
+    <div class="row row-when-large">
       <div class="col s4 l3">
         <div class="card responsive-img">
           <a href="detail.html?movie=Tenet" class="card-image ">
@@ -47,7 +56,6 @@
         </div>
       </div>
 
-      <div class="row">
       <div class="col s4 l3">
         <div class="card responsive-img">
           <a href="detail.html?movie=Greenland" class="card-image ">
@@ -55,6 +63,7 @@
           </a>
         </div>
       </div>
+
       <div class="col s4 l3">
         <div class="card responsive-img">
           <a href="detail.html?movie=Capone" class="card-image ">
@@ -65,16 +74,21 @@
 
       <div class="col s4 l3">
         <div class="card responsive-img">
-          <a href="detail.html?movie=Raya+and+the+last+dragon" class="card-image ">
-            <img src="Images/movie-posters/Raya.jpeg">
+          <a href="detail.html?movie=Outside+the+wire" class="card-image ">
+            <img src="Images/movie-posters/Outside-The-Wire.jpeg">
           </a>
         </div>
       </div>
 
+    </div>
+
+    <!-- Row 2  When screen is large -->
+    <div class="row row-when-large"> 
+
       <div class="col s4 l3">
         <div class="card responsive-img">
-          <a href="detail.html?movie=Alone" class="card-image">
-            <img src="Images/movie-posters/Alone.jpeg">
+          <a href="detail.html?movie=Tom+and+jerry+the+movie" class="card-image">
+            <img src="Images/movie-posters/Tom-Jerry.jpeg">
           </a>
         </div>
       </div>
@@ -89,47 +103,164 @@
 
       <div class="col s4 l3">
         <div class="card responsive-img">
-          <a href="detail.html?movie=F9" class="card-image">
-            <img src="Images/movie-posters/F9.jpeg">
+          <a href="detail.html?movie=The+croods+a+new+age" class="card-image">
+            <img src="Images/movie-posters/Croods-New-Age.jpeg">
           </a>
         </div>
       </div>
 
       <div class="col s4 l3">
         <div class="card responsive-img">
-          <a href="detail.html?movie=Halloween" class="card-image">
-            <img src="Images/movie-posters/Halloween.jpeg">
+          <a href="detail.html?movie=The+midnight+sky" class="card-image">
+            <img src="Images/movie-posters/Midnight-Sky.jpeg">
           </a>
         </div>
       </div>
 
+    </div>
+
+    <!-- Row 3  When screen is large -->
+    <div class="row row-when-large">
+
       <div class="col s4 l3">
         <div class="card responsive-img">
-          <a href="detail.html?movie=Jurrasic+world+dominion" class="card-image">
-            <img src="Images/movie-posters/Jurassic-World.jpeg">
+          <a href="detail.html?movie=Pieces+of+a+woman" class="card-image">
+            <img src="Images/movie-posters/Pieces-of-a-Woman.jpeg">
           </a>
         </div>
       </div>
       
       <div class="col s4 l3">
         <div class="card responsive-img">
-          <a href="detail.html?movie=Loki" class="card-image">
-            <img src="Images/movie-posters/Loki.jpeg">
+          <a href="detail.html?movie=Thinking+of+ending+things" class="card-image">
+            <img src="Images/movie-posters/Thinking-of-Ending-Things.jpeg">
           </a>
         </div>
       </div>
 
       <div class="col s4 l3">
         <div class="card responsive-img">
-          <a href="detail.html?movie=Batman" class="card-image">
-            <img src="Images/movie-posters/Batman.jpeg">
+          <a href="detail.html?movie=Underwater" class="card-image">
+            <img src="Images/movie-posters/Underwater.jpeg">
           </a>
         </div>
       </div>
+
       <div class="col s4 l3">
         <div class="card responsive-img">
-          <a href="detail.html?movie=Jungle+cruise" class="card-image">
-            <img src="Images/movie-posters/Jungle-Cruise.jpeg">
+          <a href="detail.html?movie=The+invisible+man" class="card-image">
+            <img src="Images/movie-posters/Invisible-Man.jpeg">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 1 When screen is small -->
+    <div class="row row-when-small">
+      <div class="col s4 l3">
+        <div class="card responsive-img">
+          <a href="detail.html?movie=Tenet" class="card-image ">
+            <img src="Images/movie-posters/Tenet.jpeg">
+          </a>
+        </div>
+      </div>
+
+      <div class="col s4 l3">
+        <div class="card responsive-img">
+          <a href="detail.html?movie=Greenland" class="card-image ">
+            <img src="Images/movie-posters/Greenland.jpeg">
+          </a>
+        </div>
+      </div>
+
+      <div class="col s4 l3">
+        <div class="card responsive-img">
+          <a href="detail.html?movie=Capone" class="card-image ">
+            <img src="Images/movie-posters/Capone.jpeg">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Row 2 When screen is small -->
+    <div class="row row-when-small">
+      <div class="col s4 l3">
+        <div class="card responsive-img">
+          <a href="detail.html?movie=Outside+the+wire" class="card-image ">
+            <img src="Images/movie-posters/Outside-The-Wire.jpeg">
+          </a>
+        </div>
+      </div>
+
+      <div class="col s4 l3">
+        <div class="card responsive-img">
+          <a href="detail.html?movie=Tom+and+jerry+the+movie" class="card-image">
+            <img src="Images/movie-posters/Tom-Jerry.jpeg">
+          </a>
+        </div>
+      </div>
+
+      <div class="col s4 l3">
+        <div class="card responsive-img">
+          <a href="detail.html?movie=Cherry" class="card-image">
+            <img src="Images/movie-posters/Cherry.jpeg">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Row 3 When screen is small -->
+    <div class="row row-when-small">
+      <div class="col s4 l3">
+        <div class="card responsive-img">
+          <a href="detail.html?movie=The+croods+a+new+age" class="card-image">
+            <img src="Images/movie-posters/Croods-New-Age.jpeg">
+          </a>
+        </div>
+      </div>
+
+      <div class="col s4 l3">
+        <div class="card responsive-img">
+          <a href="detail.html?movie=The+midnight+sky" class="card-image">
+            <img src="Images/movie-posters/Midnight-Sky.jpeg">
+          </a>
+        </div>
+      </div>
+
+      <div class="col s4 l3">
+        <div class="card responsive-img">
+          <a href="detail.html?movie=Pieces+of+a+woman" class="card-image">
+            <img src="Images/movie-posters/Pieces-of-a-Woman.jpeg">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Row 4 When screen is small -->
+    <div class="row row-when-small">
+      <div class="col s4 l3">
+        <div class="card responsive-img">
+          <a href="detail.html?movie=Thinking+of+ending+things" class="card-image">
+            <img src="Images/movie-posters/Thinking-of-Ending-Things.jpeg">
+          </a>
+        </div>
+      </div>
+
+      <div class="col s4 l3">
+        <div class="card responsive-img">
+          <a href="detail.html?movie=Underwater" class="card-image">
+            <img src="Images/movie-posters/Underwater.jpeg">
+          </a>
+        </div>
+      </div>
+
+      <div class="col s4 l3">
+        <div class="card responsive-img">
+          <a href="detail.html?movie=The+invisible+man" class="card-image">
+            <img src="Images/movie-posters/Invisible-Man.jpeg">
           </a>
         </div>
       </div>
