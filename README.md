@@ -20,3 +20,13 @@ As a movie enthusiast, I want to find a new good movie to watch based on Rotten 
 ## APIs Used 
 • OMDb
 • Youtube 
+
+## Links
+GitHub Repo: https://github.com/chancevaughn/Trailers
+Published Site: https://chancevaughn.github.io/Trailers/
+
+## Contributers
+Belle Duran
+Brianna Williamson
+Jason Sharpless
+Chance Robinson
