@@ -44,13 +44,13 @@ $(".switch").on('click', function() {
     href: "detail.html?movie=" + href
     }
     var favoriteMovie = [];
-    if (!favoriteMovie.includes(movie)) {
-        localStorage.getItem(movie);
-        }
+    if (((localStorage.getItem(movie)) !== null)) {
+        favoriteMovie = JSON.parse(localStorage.getItem('favoriteMovie', movie))
+            }
         else {
             var data = [];
-            data.push(movie)
-            localStorage.setItem('favoriteMovie', JSON.stringify(favoriteMovie))
+            data.push(favoriteMovie)
+            localStorage.setItem('favoriteMovie', JSON.stringify(data))
         }
         console.log(favoriteMovie)
     })
@@ -58,6 +58,9 @@ $(".switch").on('click', function() {
 //     (JSON.parse(localStorage.getItem('favorieMovie')) !== null)) {
 //         favoriteMovie = JSON.parse(localStorage.getItem("movie"))
 //     }})
+// (!favoriteMovie.includes(movie)) {
+//     localStorage.getItem(movie);
+
 
     //if statement to check if its already inthe array. use method called .includes. if not in the array, push to the array. 
     // after if statement, set local storage with favmovies array. nsole.log(movie)
