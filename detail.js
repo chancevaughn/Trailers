@@ -16,13 +16,13 @@ async function init() {
 
 async function retrieveMovieInfo(movie) {
     await fetch(`${omdbPath}?t=${movie}&apikey=${omdbAppId}`)
-        .then(function(response) { return response.json() }) // Convert data to json
-        .then(function(data) {movieDetails = data;})
+        .then(function (response) { return response.json() }) // Convert data to json
+        .then(function (data) { movieDetails = data; })
     await fetch(`${youtubePath}?part=snippet&part=id&channelId=UCi8e0iOVk1fEOogdfu4YgfA&q=${movie}&key=${youtubeAPI}`)
-    .then(function(response) { return response.json() })
-    .then(function(data) {movieTrailer = data;})
+        .then(function (response) { return response.json() })
+        .then(function (data) { movieTrailer = data; })
     // console.log(movieTrailer)
-    }
+}
 
 function buildHTMLAndAssignValues() {
     $(".brand-logo").text(movieDetails.Title);
@@ -31,33 +31,33 @@ function buildHTMLAndAssignValues() {
     $(".card-movie-rating").text(`Rotten Tomatoes Rating: ${movieDetails.Ratings[1].Value}`)
     $(".video-container iframe").attr("src", `https://www.youtube.com/embed/${movieTrailer.items[0].id.videoId}`);
 
-//if no rotten tomato rating is available, state that no rotten tomato rating is available 
+    //if no rotten tomato rating is available, state that no rotten tomato rating is available 
 }
 init()
 
-$(".switch").on('click', function() {
+$(".switch").on('click', function () {
 
     var src = movieDetails.Title.replace(/\s+/g, "-");
     var href = movieDetails.Title.replace(/\s+/g, "+");
-    
-    var movie = {src: "Images/movie-posters/" + src ,
-    href: "detail.html?movie=" + href
+
+    var movie = {
+        src: "Images/movie-posters/" + src,
+        href: "detail.html?movie=" + href
     }
-    var favoriteMovie = [];
-    if (((localStorage.getItem(movie)) !== null)) {
-        favoriteMovie = JSON.parse(localStorage.getItem('favoriteMovie', movie))
-            }
-        else {
-            var data = [];
-            data.push(favoriteMovie)
-            localStorage.setItem('favoriteMovie', JSON.stringify(data))
-        }
-        console.log(favoriteMovie)
-    })
-// if (
-//     (JSON.parse(localStorage.getItem('favorieMovie')) !== null)) {
-//         favoriteMovie = JSON.parse(localStorage.getItem("movie"))
-//     }})
+
+    var favoriteMovie; // I know I want a list of favorites
+    if (localStorage.getItem("movie") === null) {
+        favoriteMovie = [];
+    } else {
+        //if it exists, pull from local storage
+        favoriteMovie = JSON.parse(localStorage.getItem("movie"))
+    }
+
+    favoriteMovie.push(movie);
+    localStorage.setItem("movie", JSON.stringify(favoriteMovie))
+    console.log(favoriteMovie)
+})
+
 // (!favoriteMovie.includes(movie)) {
 //     localStorage.getItem(movie);
 
