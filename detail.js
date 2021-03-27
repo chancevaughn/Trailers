@@ -1,6 +1,6 @@
 var omdbAppId = 'trilogy';
 var youtubeAPI = 'AIzaSyDy0Z1hGuIAeJbvhnVXeGE-3W7roHgRQis';
-var omdbPath = 'http://www.omdbapi.com/';
+var omdbPath = 'https://www.omdbapi.com/';
 var youtubePath = 'https://youtube.googleapis.com/youtube/v3/search';
 
 var movieDetails = {};
@@ -44,16 +44,23 @@ $(".switch").on('click', function() {
     href: "detail.html?movie=" + href
     }
     var favoriteMovie = [];
-    if (!favoriteMovie.includes(movie)) {
-        favoriteMovie.push(movie)
-    }
-    localStorage.setItem('favoriteMovie', JSON.stringify(favoriteMovie))
-    console.log(favoriteMovie)
+    if (((localStorage.getItem(movie)) !== null)) {
+        favoriteMovie = JSON.parse(localStorage.getItem('favoriteMovie', movie))
+            }
+        else {
+            var data = [];
+            data.push(favoriteMovie)
+            localStorage.setItem('favoriteMovie', JSON.stringify(data))
+        }
+        console.log(favoriteMovie)
     })
 // if (
 //     (JSON.parse(localStorage.getItem('favorieMovie')) !== null)) {
 //         favoriteMovie = JSON.parse(localStorage.getItem("movie"))
 //     }})
+// (!favoriteMovie.includes(movie)) {
+//     localStorage.getItem(movie);
+
 
     //if statement to check if its already inthe array. use method called .includes. if not in the array, push to the array. 
     // after if statement, set local storage with favmovies array. nsole.log(movie)
