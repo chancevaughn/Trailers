@@ -35,13 +35,13 @@ function buildHTMLAndAssignValues() {
 }
 init()
 
-$(".switch").on('click', function () {
+$(".lever").on('click', function () {
 
     var src = movieDetails.Title.replace(/\s+/g, "-");
     var href = movieDetails.Title.replace(/\s+/g, "+");
 
     var movie = {
-        src: "Images/movie-posters/" + src,
+        src: src,
         href: "detail.html?movie=" + href
     }
 
